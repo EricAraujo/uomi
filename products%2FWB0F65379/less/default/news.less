@@ -1,0 +1,117 @@
+/* ======= News Page ======= */
+.page-hero {
+    .news-page & {
+        background: url('../images/hero/hero-news.jpg') no-repeat center center;
+        .background-size(cover);
+    }
+}
+
+.events-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+    .section-title {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+    .events-items {
+        background: #fff;
+        padding: 30px;
+    }
+    .event-title {
+        color: @text-color-primary;
+    }
+    .item {
+        position: relative;
+        padding-left: 110px;
+        margin-bottom: 30px;
+    }
+    .meta {
+        font-size: 14px;
+        .fa {
+            margin-right: 5px;
+            color: @text-color-light;
+        }
+    }
+    .time {
+        width: 80px;
+        height: 80px;
+        .border-radius(50%);
+        background: @color-accent;
+        color: #fff;
+        text-align: center;
+        display: table;
+        line-height: 1.2;
+        position: absolute;
+        left: 15px;
+        top: 0;
+        .date {
+            font-size: 22px;
+            font-weight: bold;
+
+        }
+        .month {
+            text-transform: uppercase;
+            font-size: 16px;
+            
+            letter-spacing: 0.8px;
+
+        }
+    }
+    .time-inner {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .action {
+        margin-top: 30px;
+        .btn {
+            width: 260px;
+        }
+    }
+}
+
+.news-section {
+    background: @color-secondary;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    .section-title {
+        margin-top: 0;
+        margin-bottom: 30px;
+        color: #fff;
+    }
+    .item {
+        margin-bottom: 30px;
+    }
+    .item-inner {
+        position: relative;
+        &:hover {
+            .box-shadow(0px 10px 20px 0px rgba(0, 0, 0, 0.2));
+        }
+        .link {
+            position: absolute;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 5;
+            cursor:pointer;
+        }
+        .content-holder {
+            padding: 30px;
+            background: #fff;
+        }
+        .news-title {
+            a {
+                color: @color-secondary;
+            }
+        }
+    }
+    
+    .action {
+        margin-top: 30px;
+        .btn {
+            width: 260px;
+        }
+    }
+}

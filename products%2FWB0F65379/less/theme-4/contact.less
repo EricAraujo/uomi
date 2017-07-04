@@ -1,0 +1,78 @@
+/* ======= Contact Page ======= */
+.page-hero {
+    .contact-page & {
+        background: url('../images/hero/hero-contact.jpg') no-repeat center center;
+        .background-size(cover);
+    }
+}
+
+.contact-block {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+    .info-items {
+        
+        max-width: 800px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .info-item {
+        margin-bottom: 30px;
+        .item-title {
+            margin-top: 0;
+            margin-bottom: 30px;
+            color: @text-color-primary;
+        }
+        .item-inner {
+            padding: 30px;
+            background: #fff;
+        }
+        .cat {
+            margin-bottom: 15px;
+            margin-bottom: 30px;
+            .cat-title {
+               color: @color-secondary; 
+            }
+            a {
+                color: @text-color-secondary;
+                &:hover {
+                    color: @color-primary;
+                }
+            }
+        }
+    }  
+    
+    .form-box {
+        background: #fff;
+        max-width: 800px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        padding: 30px;
+        .form-title {
+            margin-top: 0;
+            margin-bottom: 30px;
+            color: @text-color-primary;
+        }
+        .contact-form-inner {
+            padding: 30px;
+            padding-top: 0;
+        }
+    }  
+    
+    .map-box {
+       background: #fff;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 30px; 
+        .map-title {
+           margin-top: 0;
+           margin-bottom: 30px;
+           color: @text-color-primary; 
+        }
+        .gmap-wrapper {
+            iframe {
+                width: 100%;
+            }
+        }
+    }
+}

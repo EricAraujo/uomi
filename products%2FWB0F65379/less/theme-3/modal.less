@@ -1,0 +1,160 @@
+/* ======= Modal ======= */
+.modal-body {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    font-size: 16px;
+    iframe {
+        max-width: 100%;
+    }
+    
+}
+
+.modal-content {
+    .border-radius(4px);
+}
+
+.modal-header {
+    border: none;
+    padding: 30px;
+    padding-bottom: 0;
+    position: relative; 
+    color: @text-color-primary;
+}
+
+.modal button.close {
+    font-size: 28px;
+    font-weight:400;
+    text-shadow:none;
+    background: none;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    z-index:10;
+    .opacity(0.6);
+    width: 28px;
+    height: 28px;
+    .border-radius(2px);
+    background: @color-primary;
+    color: #fff;
+    outline: none;
+    &:hover {
+        .opacity(1);
+    }
+}
+
+.modal-backdrop.in {
+        .opacity(0.8);
+}
+
+.modal {
+    .modal-title {
+        font-size: 24px;
+        margin-top: 0;
+        margin-bottom: 0;
+    } 
+}
+
+/* Viewo Modal */
+.modal-video {
+    .modal-content {
+        background: none;
+        border: none;
+        .box-shadow(none);
+    }
+    .modal-header {
+        padding-top: 30px;
+    }
+}
+
+/* News Modal */
+.news-modal {
+    .meta {
+        color: @text-color-light;
+    }
+    .modal-title {
+        color: @color-primary;
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+    .modal-body {
+        padding: 15px 30px;
+    }
+    .post-nav {
+        display: block;
+        .nav-previous {
+            float: right;
+            display: inline-block;
+        }
+        
+        .nav-previous {
+            float: left;
+            display: inline-block;
+        }
+    }
+}
+
+/* .modal-fullscreen */
+
+.modal-fullscreen {
+  background: transparent;
+}
+.modal-fullscreen .modal-content {
+  background: transparent;
+  border: 0;
+  .box-shadow(none);
+}
+.modal-backdrop.modal-backdrop-fullscreen {
+  background: #fff;
+}
+.modal-backdrop.modal-backdrop-fullscreen.in {
+  backgrund: #fff;
+  .opacity(1);
+}
+
+
+/* Calendar Modal */
+.calendar-modal {
+    
+    .meta {
+        color: @text-color-light;
+        .fa {
+            margin-right: 5px;
+        }
+    }
+    
+    #eventUrl {
+        color: #fff;
+    }
+    
+    .btn-link {
+        .fa {
+            margin-right: 5px;
+        }
+    }
+    
+}
+
+/* Staff Modal */
+.staff-modal {
+    .profile-image {
+        margin: 0 auto;
+        margin-bottom: 15px;
+        display: inline-block;
+    }
+    .profile-desc {
+        .name {
+            margin-top: 0;
+            margin-bottom: 5px;
+            color: @text-color-primary;
+        }
+        .title {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+
+
+
+

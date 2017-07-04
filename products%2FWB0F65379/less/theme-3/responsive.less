@@ -1,0 +1,268 @@
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 767px) { 
+    .top-bar {
+        height: inherit;
+    }
+    .main-nav .navbar-toggle {
+        top: 6px;
+    }
+    .branding {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .branding .logo {
+        display: inline-block;
+    }
+    .branding .logo img {
+        max-width: 200px;
+    }
+    .branding .tagline {
+        font-size: 16px;
+        padding: 0;
+        margin-top: 15px;
+        display: none;
+    }
+
+    .hero-badge {
+        top: 90px;
+        right: 0;
+        display: none;
+    }
+    
+    .hero-slider-wrapper {
+        min-height: inherit;
+    }
+    
+    .hero-slider-wrapper .flexslider .slide {
+        &:before {
+            content: "";
+            display:block;
+            background: rgba(0, 0, 0, 0.4);
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index:10;
+        }
+    }
+    
+    .hero-slider-wrapper .flexslider .slide-box {
+        margin-top: 120px;
+       -webkit-clip-path: none;
+       clip-path: none;
+       background: none;
+       z-index:20;
+       position: relative;
+       text-align: center;
+    }
+    .hero-overlay {
+        position: static;
+        .container-fluid {
+            padding:0;
+        }
+    }
+    
+    .hero-overlay .overlay-lower .links .link {
+        display: block;
+        text-align: left;
+        border: none;
+        border-bottom: 1px solid rgba(256, 256, 256, 0.1);
+        &:first-child {
+            border-left: none;
+        }
+        &:last-child {
+            border-bottom:none; 
+        }
+    }
+    
+    .hero-overlay .overlay-upper .contact-info {
+        float: none !important;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
+    .hero-overlay .overlay-upper .contact-info .item {
+        margin-right: 0;
+    }
+    
+    .hero-overlay .social-media {
+        float: none !important;
+    }
+    
+    .home-cols-wrapper .welcome-block .content {
+        padding-right: 0;
+    }
+    .home-cols-wrapper .welcome-block .figure {
+        position: static;
+        margin-top: 15px;
+    }
+    
+    .home-cols-wrapper .news-block .item{
+        padding-left: 0;
+        height: auto;
+    }
+    .home-cols-wrapper .news-block .thumb-holder {
+        position: static;
+        width: 100%;
+        height: 220px;
+      
+    }
+    
+    .reviews-section .carousel-indicators li {
+        padding: 0 5px;
+    }
+    
+    .reviews-section .carousel-indicators li img {
+        width: 80px;
+    }
+    .cta-section .form-control {
+        width: 100%;
+    }
+    
+    .opensessions-dates .item {
+        margin-bottom: 30px;
+    }
+    .leaders-block .item {
+        margin-bottom: 30px;
+    }
+
+    
+    .timeline-container {
+        width: 90%;
+    }
+    
+    .timeline-container:before {
+        left: 0;
+    }
+    .timeline-container .timeline-icon {
+        left: 0;
+    }
+    .timeline-container .timeline-content {
+        width: 90%;
+        float: right;
+    }
+    
+    .timeline-container .timeline-content:before, .timeline-container .timeline-content.right:before {
+        left: 10%;
+        margin-left: -5px;
+        border-left: 0;
+        border-right: 5px solid #fff;
+    }
+    .gallery-block .item-inner .title {
+        font-size: 16px;
+    }
+    .gallery-block .item-inner .desc {
+        padding: 15px;
+    }
+
+    
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .branding .logo {
+        float: left;
+        padding-right: 15px;
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .branding .tagline {
+        float: left;
+        font-size: 20px;
+        padding-left: 15px;
+    }
+    .hero-overlay .overlay-lower .links .link {
+        padding: 30px 15px;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    
+    .col-side-inner {
+        padding-left: 30px;
+    }
+    
+    .branding .logo {
+        float: left;
+        padding-right: 30px;
+        
+    }
+    .branding .logo img {
+        max-height: 50px;
+        max-width: auto;
+    }
+    .branding .tagline {
+        padding-left: 30px;
+        float: left;
+        font-size: 22px;
+    }
+    .hero-overlay .overlay-lower .links .link {
+        padding: 45px 30px;
+    }    
+    
+    
+}
+
+
+/* fix iOS bug not displaying 100vh correctly */
+/* ipad */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    .hero-slider-wrapper .flexslider  {
+        height: 768px;
+    }
+	.hero-slider-wrapper .flexslider .slide {
+		height: 768px;
+	}
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    .hero-slider-wrapper .flexslider  {
+		height: 1024px;
+	}
+	.hero-slider-wrapper .flexslider .slide {
+		height: 1024px;
+	}
+}
+/* iphone5 */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
+    .hero-slider-wrapper .flexslider {
+		height: 320px;
+	}
+	.hero-slider-wrapper .flexslider .slide {
+		height: 320px;
+	}
+}
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
+    .hero-slider-wrapper .flexslider {
+		height: 320px;
+	}
+	.hero-slider-wrapper .flexslider .slide {
+		height: 568px;
+	}
+}
+/* iPhone 4 */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+    .hero-slider-wrapper .flexslider {
+		height: 320px;
+	}
+	.hero-slider-wrapper .flexslider .slide {
+		height: 320px;
+	}
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+    .hero-slider-wrapper .flexslider {
+		height: 480px;
+	}
+	.hero-slider-wrapper .flexslider .slide {
+		height: 480px;
+	}
+}
+
+
+
+
+
+

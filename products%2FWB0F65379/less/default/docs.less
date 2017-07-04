@@ -1,0 +1,80 @@
+/* ======= Docs Page ======= */
+.page-hero {
+    .docs-page & {
+        background: url('../images/hero/hero-docs.jpg') no-repeat center center;
+        .background-size(cover);
+    }
+}
+
+.docs-block {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    .item {
+        margin-bottom: 30px;
+    }
+    .item-inner {
+        position: relative;
+        background: #fff;
+        &:hover {
+            .box-shadow(0px 10px 20px 0px rgba(0, 0, 0, 0.2));
+            .thumb-holder {
+                background: rgba(red(@text-color-primary), green(@text-color-primary), blue(@text-color-primary), 0.15);
+            }
+        }
+    }
+    .link {
+        position: absolute;
+        display: inline-block;
+        z-index: 5;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        cursor: pointer;
+    }
+    .thumb-holder {
+        background: rgba(red(@text-color-primary), green(@text-color-primary), blue(@text-color-primary), 0.1);
+        text-align: center;
+        padding: 30px;
+        .label {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+        .fa {
+            font-size: 40px;
+            display: inline-block;
+            margin: 0 auto;
+            width: 80px;
+            height: 80px;
+            .border-radius(50%);
+            background: #fff;
+            padding-top: 20px;
+            &.pdf-file {
+                color: @color-pdf;
+            }
+            &.text-file {
+                color: @color-word;
+            }
+            &.excel-file {
+                color: @color-excel;
+            }
+            &.ppt-file {
+                color: @color-ppt;
+            }
+        }
+
+    }
+    .desc {
+        background: #fff;
+        padding: 30px;
+        .title {
+            color: @text-color-primary;
+        }
+    }
+    .action {
+        margin-top: 30px;
+        text-align: center;
+    }
+    
+}

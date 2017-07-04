@@ -1,0 +1,206 @@
+/* ======= Blog Page ======= */
+.page-hero {
+    .blog-page & {
+        background: url('../images/hero/hero-blog.jpg') no-repeat center center;
+        .background-size(cover);
+    }
+    .blog-single-page & {
+        background: url('../images/hero/hero-blog-post.jpg') no-repeat center center;
+        .background-size(cover);
+    }
+}
+
+.blog-list-section {
+    .post {
+        margin-bottom: 60px;
+        &:hover {
+            .box-shadow(0px 10px 20px 0px rgba(0, 0, 0, 0.2));
+        }
+        .content {
+            background: #fff;
+            padding: 30px;
+        }
+        .date {
+            color: @text-color-light;
+            margin-bottom: 15px;
+        }
+    }
+    .post-title {
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+}
+
+/* ======= Pagination ======= */
+.pagination {
+    margin-bottom: 60px;
+    li {
+        a {
+            .border-radius(2px);
+            border: none;
+            margin-right: 5px;
+            color: @color-primary;
+            &:hover {
+                color: darken(@color-primary, 25%);
+            }
+        }
+    }
+}
+
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus {
+    background-color: @color-primary;
+    border:none; 
+}
+
+.pagination>li>a:hover, .pagination>li>span:hover, .pagination>li>a:focus, .pagination>li>span:focus  {
+    background-color: lighten(@color-primary, 30%);
+    border:none;
+}
+
+.pagination>li:first-child>a, .pagination>li:first-child>span, .pagination>li:last-child>a, .pagination>li:last-child>span {
+    .border-radius(50%);
+    background:none;
+}
+
+/* =========Blog single============ */
+.blog-post {
+    .post-single-title {
+        margin-top: 0;
+        margin-bottom: 15px;
+        color: @text-color-primary;
+        font-size: 26px;
+    }
+    .meta {
+        font-size: 14px;
+        color: @text-color-light;
+        margin-bottom: 30px;
+        a {
+            color:  @text-color-light;
+            &:hover {
+                color: @text-color-secondary;
+            }
+        }
+    }
+    .video-container {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .custom-list-style {
+        list-style: none;
+        margin-bottom: 30px;
+        li {
+            margin-bottom: 10px;
+            .fa {
+                margin-right: 5px;
+                color: @color-primary;
+            }
+        }
+    }
+
+    .post-nav {
+        margin-bottom: 30px;
+        .nav-next {
+            float: right;
+            .fa {
+                margin-left: 5px;
+            }
+        }
+        .nav-previous {
+            .fa {
+                margin-right: 5px;
+            }
+        }
+    }
+    
+    .custom-quote {
+        border-color: lighten(@color-primary, 10%);
+        font-weight: normal;
+        font-family: 'Source Serif Pro', serif;
+        background: #fff;
+        padding: 30px;
+        p {
+            color: @text-color-primary;
+            line-height: 1.6;
+            font-size: 20px;
+        }
+        .fa {
+            color: @color-primary;
+            margin-right: 10px;
+        }
+        .source {
+            font-size: 18px;
+            font-family: 'Source Sans Pro', sans-serif;
+            
+            .name {
+                color: @text-color-secondary;
+                
+            }
+            .title {
+                font-size: 16px;
+                color: @text-color-light;
+            }
+        }
+    }
+}
+
+.comment-area {
+
+    .title {
+        font-size: 24px;
+        margin-bottom: 30px;
+        color: @text-color-primary;
+    }
+    .comment-container {
+        margin-bottom: 60px;
+        .comment-item {                
+            margin-bottom: 30px;
+            .comment-item-box {
+               position: relative;
+                background: #fff;
+                padding: 30px;
+                padding-left: 115px; 
+                margin-bottom: 15px;
+            }
+            .comment-author {
+                position: absolute;
+                left: 30px;
+                top: 30px;
+                img {
+                    width: 60px;
+                    height: 60px;          
+                }
+            }
+            .comment-body {
+                .name {
+                    color: @color-secondary;
+                    font-style: normal;
+
+                }
+                .time {
+                    color: @text-color-light;
+                    font-size: 13px;
+                    margin-bottom: 15px;
+                }
+                .comment-reply-link {
+                    padding: 4px 10px;
+                    font-size: 13px;
+                }
+            }
+            .children {
+                padding-left: 30px;
+            }
+        }
+    }
+    .comment-form {
+        .error {
+            color: @error;
+            font-family: arial, sans-serif;
+            display: block;
+            font-size: 14px;
+            text-align: left;
+            padding-top: 5px;            
+            font-weight: 300;
+        }
+    }
+}
+

@@ -1,0 +1,94 @@
+/* ======= About Page ======= */
+.page-hero {
+    .about-page & {
+        background: url('../images/hero/hero-about.jpg') no-repeat center center;
+        .background-size(cover);
+    }
+}
+
+.carousel-achievement {
+    position: relative;
+    .carousel-indicators {
+        bottom: 0;
+        li {
+            background: @grey;
+            border:none;
+            margin: 0;
+            margin-right: 5px;
+            &:last-child {
+                margin-right: 0;
+            }
+            &.active {
+                width: 10px;
+                height: 10px;
+                background: @text-color-secondary;
+            }
+        }
+    }
+    .quote {
+        padding: 60px 60px;
+        font-size: 24px;
+        font-family:'Source Serif Pro', serif;
+        color: @color-secondary;
+        text-align: center;
+        
+        .fa-quote-left {
+            position: absolute;
+            left: 15px;
+            top: 15px;
+            .opacity(0.3);
+        }
+        .fa-quote-right {
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            .opacity(0.3);
+        }
+    }
+    
+}
+
+.download-docs {
+    .item {
+        padding: 10px 0;
+        border-bottom: 1px solid @divider;
+        overflow: hidden;
+        &:hover {
+            background: @divider;
+        }
+        &>div {
+            display: inline-block;
+        }
+        a {
+            color: @color-secondary;
+        }
+        .icon {
+           color: @color-secondary; 
+           margin-right: 10px;
+           float: left;
+        }
+        .name {
+            float: left;
+        }
+        .type {
+            color: @grey;
+            font-size: 14px;
+            text-align:right;
+            float: right;
+        }
+    }  
+}
+
+.col-main  {
+    .leaders-block {
+        .name {
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+        .profile-desc {
+            background: @color-secondary;
+            color: #fff;
+            padding: 30px;
+        }
+    }
+}
